@@ -2,24 +2,28 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoginReg from "./components/pages/auth/LoginReg";
 import ResetPassword from "./components/pages/auth/ResetPassword";
 import SendPasswordResetEmail from "./components/pages/auth/SendPasswordResetEmail";
-import CONTACT from "./components/pages/CONTACT";
+import Contact from "./components/pages/Contact";
 import Dashboard from "./components/pages/Dashboard";
 import Home from "./components/pages/Home";
-import layout from "./components/pages/layout";
+import Layout from "./components/pages/Layout";
+import Homeimg from "./components/pages/Homeimg";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<layout />}>
+          <Route path="/" element={<Layout />}>
+          
             <Route index element={<Home />} />
-            <Route path="CONTACT" element={<CONTACT />} />
+            
+            <Route path="contact" element={<Contact />} />
             <Route path="login" element={<LoginReg />} />
             <Route path="sendpasswordresetemail" element={<SendPasswordResetEmail />} />
             <Route path="reset" element={<ResetPassword />} />
           </Route>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="Home" element={<Homeimg/>}></Route>
           <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />
         </Routes>
       </BrowserRouter>
