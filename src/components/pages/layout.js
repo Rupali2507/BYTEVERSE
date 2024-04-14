@@ -2,7 +2,7 @@ import { CssBaseline } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar";
 
-const Layout = () => {
+const layout = () => {
   return <>
     <CssBaseline />
     <Navbar />
@@ -10,4 +10,4 @@ const Layout = () => {
   </>;
 };
 
-export default Layout;
+export default layout;
