@@ -12,13 +12,13 @@ const Navbar = () => {
       }}>VOTE FOR INDIA </Typography>
       <Button component={NavLink} to='/' style={({isActive})=>{
         return {backgroundColor : isActive ? '#6d1b7b' :''}
-      }} sx={{color:'white',textTransform:'none'}}>HOME</Button>
+      }} sx={{color:'white',textTransform:'none'}}>Home</Button>
 
 <Button component={NavLink} to='/CONTACT' style={({isActive})=>{
         return {backgroundColor : isActive ? '#6d1b7b' :''}
       }} sx={{color :'white',textTransform:'none'}}>Contact</Button>
       
-      <Button component={NavLink} to='/loginReg' style={({isActive})=>{
+      <Button component={NavLink} to='/login' style={({isActive})=>{
         return {backgroundColor : isActive ? '#6d1b7b' :''}
       }} sx={{color :'white',textTransform:'none'}}>Login/Registration</Button>
 
